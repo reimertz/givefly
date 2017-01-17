@@ -1,0 +1,201 @@
+{% extends '/Users/reimertz/git/givefly/build/html//base.html' %}
+
+{% block css_head_theme %}
+  <link rel="stylesheet" href="/css/desktop/home.css">
+  
+{% endblock %}
+
+{% block body %}
+<nav class="navbar navbar-green navbar-fixed-top" role="navigation">
+    <ul class="nav navbar-nav navbar-left">
+      <li><a class="logo" href="/img/logo.png"></a></li>
+    </ul>
+
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#">Login</a></li>
+      <li><a href="#">Sign up</a></li>
+    </ul>
+</nav>
+
+
+
+<div class="container-full">
+  <div class="jumbotron header text-center">
+    <!--i class="fa fa-plane slide"></i-->
+    <h1 class="shadow">Everybody has a talent<br>Why not share it?</h1>
+    <h1 class="shadow"></h1>
+    <div class="row">
+      <div class="col-md-8 col-lg-8 col-md-offset-2">
+        <p class="lead shadow">What if you could donate your talent, for a cause you agree with, while getting paid by your employeer?</p> 
+      </div>
+    </div>
+    <div class="row">
+        <p>
+          <a class="btn btn-lg btn-red" data-toggle="modal" data-target="#myModal">Sign Up</a> 
+        </p>
+      </div>
+    </div>
+
+  <div class="slider">
+    <div class="row menu">
+      <ul class="nav nav-pills" id="mySlider">
+      <div class="slide-1 active text-center col-md-2 col-sm-2 col-md-offset-2 col-sm-offset-3" href="#area-1" data-toggle="tab">
+          <i class="fa fa-magic"></i>
+          <p class="uppercase">Companies donates talent each month</p>
+        </div>
+        <!--div class="slide-1 active text-center col-md-2 col-sm-2 col-md-offset-2 col-sm-offset-3" href="#area-1" data-toggle="tab">
+          <i class="fa fa-plane"></i>
+          <p class="uppercase">Airlines donate Wifi<br>&nbsp;</p>
+        </div-->
+        <div class="slide-2 text-center col-md-2 col-sm-2" href="#area-2" data-toggle="tab">
+          <i class="fa fa-building-o"></i>
+          <p class="uppercase">Organisations upload projects</p>
+        </div>
+        <div class="slide-3 text-center col-md-2 col-sm-2" href="#area-3" data-toggle="tab">
+          <i class="fa fa-male"></i><i class="fa fa-female"></i>
+          <p class="uppercase">People at companies spend time to help out</p>
+        </div>
+        <div class="slide-3 text-center col-md-2 col-sm-2" href="#area-4" data-toggle="tab">
+          <i class="fa fa-globe"></i>
+          <p class="uppercase">The world becomes a better place!</p>
+        </div>
+      </ul>
+    </div>
+
+    <div class="row slide-area">
+      <div class="tab-content">
+      <div class="area-1 tab-pane fade in active col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2" id="area-1">
+          <div class="row">
+            <div class="col-md-10 col-lg-10 col-md-offset-1">
+              <p class="lead">
+                Companies houses a bunch of <strong>talented people</strong>, so why not donate talent each month on a project for a non-profit organisation? Three or four hours for a <strong>cause</strong> the company agrees with would do a lot and <strong>make the world a better place</strong>. 
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="text-center col-md-10 col-lg-10 col-md-offset-1">
+              <h3>companies & people <i class="fa fa-heart"></i>  timebird.io</h3>
+              <img class="airline-img" src="/img/partners/bandpage.png">
+              <img class="airline-img" src="/img/partners/delphix.png">
+              <img class="airline-img" src="/img/partners/facebook.jpg">
+              <img class="airline-img" src="/img/partners/google.png">
+              <img class="airline-img" src="/img/partners/spotify.png">
+            </div>
+          </div>
+        </div>
+        <!--div class="area-1 tab-pane fade in active col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2" id="area-1">
+          <div class="row">
+            <div class="col-md-10 col-lg-10 col-md-offset-1">
+              <p class="lead">
+                A majority of airline companies offer <strong>wifi access</strong> on their routes, but are often costly. Our idea is that if a traveler promise to work on a project for an organisation during their travel, these airlines will offer them wifi access for free.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="text-center col-md-10 col-lg-10 col-md-offset-1">
+              <h3>airlines <i class="fa fa-heart"></i>  timebird.io</h3>
+              <img class="airline-img" src="/img/airlines/emirates.png">
+              <img class="airline-img" src="/img/airlines/sas.png">
+              <img class="airline-img" src="/img/airlines/virgin.png">
+              <img class="airline-img" src="/img/airlines/delta.png">
+              <img class="airline-img" src="/img/airlines/lufthansa.png">
+            </div>
+          </div>
+        </div-->
+
+        <div class="area-2 tab-pane fade col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2" id="area-2">
+          <div class="row">
+            <div class="col-md-10 col-lg-10 col-md-offset-1">
+              <p class="lead">Let's say a organisation called "Save The Coral Reefs" needs to <strong>add a feature</strong> on their homepage where they can post blog posts but <strong>lacks the knowledge to implement it</strong>. What they do is to signup for a  organisation account, upload a short description of the project and wait for someone to take it on.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="text-center col-md-10 col-lg-10 col-md-offset-1">
+              <h3>organisations <i class="fa fa-heart"></i>  timebird.io</h3>
+              <img class="airline-img" src="/img/organisations/wwf.png">
+              <img class="airline-img" src="/img/organisations/oceanfdn.png">
+              <img class="airline-img" src="/img/organisations/peta.jpg">
+              <img class="airline-img" src="/img/organisations/savethechildren.png">
+              <img class="airline-img" src="/img/organisations/who.jpg">
+            </div>
+          </div>
+        </div>
+        
+        <div class="area-2 tab-pane fade col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2" id="area-3">
+         <div class="row">
+          <div class="col-md-10 col-lg-10 col-md-offset-1">
+            <p class="lead">A person or a ci</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="text-center col-md-10 col-lg-10 col-md-offset-1">
+            <h3>organisations <i class="fa fa-heart"></i>  timebird.io</h3>
+            <img class="airline-img" src="/img/organisations/wwf.png">
+            <img class="airline-img" src="/img/organisations/oceanfdn.png">
+            <img class="airline-img" src="/img/organisations/peta.jpg">
+            <img class="airline-img" src="/img/organisations/savethechildren.png">
+            <img class="airline-img" src="/img/organisations/who.jpg">
+          </div>
+        </div>
+        </div>
+        <div class="area-2 tab-pane fade col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2" id="area-4">
+          fyra  
+        </div>
+      </div>
+    </div>
+  </div>
+    
+
+  <div class="jumbotron steps">
+    <div class="row">
+      <div class="text-center col-sm-12">
+        <h1>How it Works</h1>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="text-center col-md-4 col-sm-4">
+        <h1 class="circle no-hover">1</h1>
+        <h3 class="uppercase text-center">Airlines donate Wifi</h3>
+        <p class="lead">A majority of airline companies offer wireless internet access on their routes, but are often costly. Our idea is that if a traveler promise to work on a project for an organisation during the travel, airlines that sponsor this project,  will offer them wifi access for free.</p>
+      </div>
+      <div class="text-center col-md-4 col-sm-4">
+        <h1 class="circle no-hover">2</h1>
+        <h3 class="uppercase text-center">Organisations upload projects</h3>
+        <p class="lead">Let's say the organisation Save The Coral Reefs needs to add a feature on their homepage where they can post blog posts but lacks the knowledge to implement it. What they could do is to signup for a TimeBird organisations account, upload a short description of the project with optional photos and videos. </p>
+      </div>
+      <div class="text-center col-md-4 col-sm-4">
+        <h1 class="circle no-hover">3</h1>
+        <h3 class="uppercase text-center">People donate time to help out</h3>
+        <p class="lead">A week before the donor is traveling, he signup for a Donor TimeBird account, he search for a project that fit his skill-set and find the 
+        "Save The Coral Reefs" project. He applies to that project
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            </div>
+            <div class="modal-body">
+              loool
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+
+
+{% endblock %}
+
+{% block js_body_page %}
+  <script src="/js/desktop/home.js"></script>
+
+{% endblock %}
